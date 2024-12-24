@@ -105,6 +105,19 @@
       margin-bottom: 1.5rem;
       color: #555;
     }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .gallery img, .gallery video {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
     @media (max-width: 768px) {
       .header {
         font-size: 2rem;
@@ -358,6 +371,30 @@
       <p>Cinematography with Edit: ₹18,000/-</p>
       <p>360 Degree Selfie Booth: ₹5,000/-</p>
     </div>
+  </div>
+  <!-- <div class="sub-header">Our Work</div> -->
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="1.jpg" alt="Previous Work Photo 1">
+    </div>
+    <div class="gallery-item">
+      <img src="2.JPG" alt="Previous Work Photo 2">
+    </div>
+    <div class="gallery-item">
+      <img src="3.JPG" alt="Previous Work Photo 3">
+    </div>
+    <div class="gallery-item">
+      <video controls>
+        <source src="reel - (9x16).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <!-- <div class="gallery-item">
+      <video controls>
+        <source src="Teaser.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div> -->
   </div>
 </body>
 </html>
