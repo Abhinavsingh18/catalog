@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Packages</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
+      color: #333;
+    }
+    .header {
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .package-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .package-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      transform: translateY(0);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .package-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+    .package-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      color: #ff6347;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+    .package-details {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+    .price {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #ff6347;
+      margin-bottom: 1.5rem;
+    }
+    .book-btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      background: #ff6347;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .book-btn:hover {
+      background: #ff4500;
+      transform: scale(1.05);
+    }
+    .sub-header {
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 2.5rem;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .additional-charges {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      margin: 3rem auto;
+      max-width: 600px;
+      text-align: center;
+    }
+    .additional-charges-title {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      color: #ff6347;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+    .additional-charges-details {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+    @media (max-width: 768px) {
+      .header {
+        font-size: 2rem;
+        padding: 1rem 0;
+      }
+      .package-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .package-card {
+        padding: 1rem;
+      }
+      .package-title {
+        font-size: 1.5rem;
+      }
+      .price {
+        font-size: 1.5rem;
+      }
+      .book-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+      }
+      .sub-header {
+        font-size: 2rem;
+        padding: 1rem 0;
+      }
+      .additional-charges-title {
+        font-size: 1.5rem;
+      }
+      .additional-charges-details {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">Our Photography Packages</div>
+  <div class="package-container">
+    <!-- Package 1 -->
+    <div class="package-card">
+      <div class="package-title">BASIC PACKAGE</div>
+      <div class="package-details">
+        <p>Functions:</p>
+        <ul>
+          <li>Haldi</li>
+          <li>Mehendi</li>
+          <li>Lagun + Bhat</li>
+          <li>Wedding Night</li>
+        </ul>
+        <p>Photos: 250-300</p>
+        <p>Sheets: 30-35 Glossy Sheets</p>
+        <p>Video: Full Shoot</p>
+      </div>
+      <div class="price">₹20,000/-</div>
+      <a href="#" class="book-btn">Book Now</a>
+    </div>
+    <!-- Package 2 -->
+    <div class="package-card">
+      <div class="package-title">STANDARD PACKAGE</div>
+      <div class="package-details">
+        <p>Functions:</p>
+        <ul>
+          <li>Haldi</li>
+          <li>Mehendi</li>
+          <li>Lagun + Bhat</li>
+          <li>Wedding Night</li>
+        </ul>
+        <p>Photos: 250-300</p>
+        <p>Sheets: 30-35 NTR Water Proof</p>
+        <p>Video: Full Shoot</p>
+        <p>1 Special Gift</p>
+      </div>
+      <div class="price">₹30,000/-</div>
+      <a href="#" class="book-btn">Book Now</a>
+    </div>
+    <!-- Package 3 -->
+    <div class="package-card">
+      <div class="package-title">PREMIUM PACKAGE</div>
+      <div class="package-details">
+        <p>Functions:</p>
+        <ul>
+          <li>Haldi</li>
+          <li>Mehendi</li>
+          <li>Lagun + Bhat</li>
+          <li>Wedding Night</li>
+        </ul>
+        <p>Photos: 250-300</p>
+        <p>Sheets: 30-35 NTR Water Proof</p>
+        <p>Video: Full Shoot</p>
+        <p>One Photo Frame 12x18</p>
+        <p>1 Reel For Instagram</p>
+        <p>Album Briefcase Normal Quality</p>
+      </div>
+      <div class="price">₹35,000/-</div>
+      <a href="#" class="book-btn">Book Now</a>
+    </div>
+  </div>
+  <!-- <div class="sub-header">WITH DRONE PACKAGES</div> -->
+  <div class="package-container"> 
+    <!-- Package 4 -->
+    <div class="package-card">
+      <div class="package-title">PREMIUM PACKAGE WITH DRONE</div>
+      <div class="package-details">
+        <p>Functions:</p>
+        <ul>
+          <li>Haldi</li>
+          <li>Mehendi</li>
+          <li>Lagun + Bhat</li>
+          <li>Wedding Night</li>
+        </ul>
+        <p>Photos: 250-300</p>
+        <p>Sheets: 30-35 NTR Water Proof</p>
+        <p>Video: Full Shoot</p>
+        <p>Drone Shoot</p>
+        <p>One Photo Frame 24x36</p>
+        <p>1 Reel For Instagram</p>
+        <p>Album Briefcase Wooden Heavy Quality</p>
+      </div>
+      <div class="price">₹40,000/-</div>
+      <a href="#" class="book-btn">Book Now</a>
+    </div>
+    <!-- Package 5 -->
+    <div class="package-card">
+      <div class="package-title">PREMIUM PACKAGE WITH DRONE+LED+CRANE</div>
+      <div class="package-details">
+        <p>Functions:</p>
+        <ul>
+          <li>Haldi</li>
+          <li>Mehendi</li>
+          <li>Lagun + Bhat</li>
+          <li>Wedding Night</li>
+        </ul>
+        <p>Photos: 250-300</p>
+        <p>Sheets: 30-35 NTR Water Proof</p>
+        <p>Video: Full Shoot</p>
+        <p>Drone Shoot</p>
+        <p>One Photo Frame 12x18</p>
+        <p>1 Reel For Instagram</p>
+        <p>LED + Crane Shoot</p>
+        <p>Album Briefcase Wooden Heavy Quality</p>
+      </div>
+      <div class="price">₹60,000/-</div>
+      <a href="#" class="book-btn">Book Now</a>
+    </div>
+    <!-- Package 6 -->
+    <div class="package-card">
+      <div class="package-title">PREMIUM PACKAGE WITH DRONE+LED +CRANE+PREWEDING+<br>CANDID+<br>CINEMATOGRAPHY</div>
+      <div class="package-details">
+        <p>Functions:</p>
+        <ul>
+          <li>Haldi</li>
+          <li>Mehendi</li>
+          <li>Lagun + Bhat</li>
+          <li>Wedding Night</li>
+        </ul>
+        <p>Photos: 300-350</p>
+        <p>Sheets: 45-50 NTR Water Proof</p>
+        <p>Video: Full Shoot</p>
+        <p>Drone Shoot+Cinematography</p>
+        <p>One Photo Frame 12x18</p>
+        <p>LED + Crane Shoot</p>
+        <p>Pre-Wedding Shoot</p>
+        <ul>1 Highlight Video</ul>
+        <ul>1 Teaser Video</ul>
+        <ul>1 Reel For Instagram</ul>
+        <ul>Prewedding 25 Photo Edit</ul>
+        <p>Wedding Highlight</p>
+        <ul>1 Highlight Video</ul>
+        <ul>1 Teaser Video</ul>
+        <ul>1 Reel For Instagram</ul>
+        <ul>1 Photo Frame 12x18</ul>
+        <ul>1 Photo Frame 24x36</ul>
+        <ul>1 Table Calendar</ul>
+        <ul>1 Mini Album</ul>
+        <p>1 Special Gift</p>
+      </div>
+      <div class="price">₹1,10,000/-</div>
+      <a href="#" class="book-btn">Book Now</a>
+    </div>
+    <!-- Package 7 -->
+    <div class="package-card">
+      <div class="package-title">PREWEDDING PACKAGE</div>
+      <div class="package-details">        
+        <p>TEASER </p>
+        <p>HIGHLIGHT </p>
+        <p>1 REEL FOR INSTAGRAM</p>
+        <p>25 PHOTO EDIT</p>
+        <p>5 Min Videos With Song</p>
+        <p>7 day photos in which 1 day ago ,2 day ago</p>
+        <h2>Location charges by customer if any</h2>
+      </div>
+      <div class="price">₹25,000/-</div>
+      <a href="#" class="book-btn">Book Now</a>
+    </div>
+
+    <div class="package-card">
+      <div class="package-title">BASIC BIRTHDAY PACKAGE</div>
+      <div class="package-details">        
+        <p>Photos: 100-120</p>
+        <p>Sheets: NTR Water Proof</p>
+        <p>Video: Full Shoot</p>
+      </div>
+      <div class="price">₹12,000/-</div>
+      <a href="#" class="book-btn">Book Now</a>
+    </div>
+    <!-- Add more packages here -->
+    <div class="package-card">
+      <div class="package-title">PREMIUM BIRTHDAY PACKAGE</div>
+      <div class="package-details">        
+        <p>Photos: 100-120</p>
+        <p>Sheets: NTR Water Proof</p>
+        <p>Video: Full Shoot</p>
+        <p>Drone Shoot</p>
+        <p>Candid Shoot</p>
+        <p>Cinematography</p>
+      </div>
+      <div class="price">₹20,000/-</div>
+      <a href="#" class="book-btn">Book Now</a>
+
+  </div>
+
+  <div class="package-card">
+    <div class="package-title">BASIC RING CEREMONY PACKAGE</div>
+    <div class="package-details">        
+      <p>Photos: 100-120</p>
+      <p>Sheets: NTR Water Proof</p>
+      <p>Video: Full Shoot</p>
+    </div>
+    <div class="price">₹12,000/-</div>
+    <a href="#" class="book-btn">Book Now</a>
+  </div>
+  <!-- Add more packages here -->
+  <div class="package-card">
+    <div class="package-title">PREMIUM RING CEREMONY PACKAGE</div>
+    <div class="package-details">        
+      <p>Photos: 100-120</p>
+      <p>Sheets: NTR Water Proof</p>
+      <p>Video: Full Shoot</p>
+      <p>Drone Shoot</p>
+      <p>Candid Shoot</p>
+      <p>Cinematography</p>
+    </div>
+    <div class="price">₹20,000/-</div>
+    <a href="#" class="book-btn">Book Now</a>
+  </div>
+  <div class="additional-charges">
+    <div class="additional-charges-title">Additional Charges</div>
+    <div class="additional-charges-details">
+      <p>Drone: ₹5,000/-</p>
+      <p>Candid: ₹15,000/-</p>
+      <p>Cinematography with Edit: ₹18,000/-</p>
+      <p>360 Degree Selfie Booth: ₹5,000/-</p>
+    </div>
+  </div>
+</body>
+</html>
