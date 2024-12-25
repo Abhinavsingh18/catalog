@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Photography Packages</title>
+  <title>ASTIK MOVIES AND PRODUCTION</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -105,10 +105,30 @@
       margin-bottom: 1.5rem;
       color: #555;
     }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .gallery img, .gallery video {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
     @media (max-width: 768px) {
       .header {
         font-size: 2rem;
         padding: 1rem 0;
+      }
+      .package-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .package-card {
+        padding: 1rem;
       }
       .package-title {
         font-size: 1.5rem;
@@ -134,7 +154,7 @@
   </style>
 </head>
 <body>
-  <div class="header">Our Photography Packages</div>
+  <div class="header">ASTIK MOVIES AND PRODUCTION</div>
   <div class="package-container">
     <!-- Package 1 -->
     <div class="package-card">
@@ -352,7 +372,9 @@
       <p>360 Degree Selfie Booth: ₹5,000/-</p>
     </div>
   </div>
-    <button id="openGalleryBtn">Open Gallery</button>
+  <!-- <div class="sub-header">Our Work</div> -->
+  <button id="openGalleryBtn">Open Gallery</button>
+
   <div id="galleryModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
@@ -429,6 +451,5 @@
       }
     }
   </script>
-
 </body>
-</html>     
+</html>
